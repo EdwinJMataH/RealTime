@@ -12,6 +12,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    @stack('styles')
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -73,6 +74,7 @@
         </nav>
 
         <main class="py-4">
+            <div id="notification" class="alert mx-5 invisible">Test</div>
             @yield('content')
         </main>
     </div>
